@@ -109,3 +109,47 @@ Ideal para backtesting en combinación con filtros de liquidez.
 
 ## 👤Autora
 Flavia Hepp Proyecto de SQL aplicó un análisis de riesgo basado en eventos.
+
+***
+💡 **¿El mercado realmente descuenta rápido las recompras de acciones?**
+
+Las recompras (*buybacks*) suelen interpretarse como una señal positiva: la empresa considera que su acción está infravalorada.
+Pero… ¿el mercado reacciona de inmediato o hay margen para capturar valor al día siguiente?
+
+👉 Analicé la **latencia del precio tras eventos de recompra**, midiendo el rendimiento del día siguiente al anuncio.
+
+💥 **Insight clave:**
+Hay mercados donde las recompras generan un **incremento significativo al día siguiente**, lo que sugiere que la reacción no es completamente instantánea… y podría haber oportunidades de arbitraje.
+
+---
+
+📊 **¿Qué evalué?**
+
+* Eventos de *Recompra de Acciones*
+* Precio de cierre el día del evento vs. día siguiente
+* Rendimiento promedio por **bolsa/mercado de origen**
+* Filtro de robustez: mínimo 5 eventos por mercado
+
+---
+
+🧠 **Interpretación:**
+
+* Mercados con mayor retorno post-evento → posible **ineficiencia**
+* Reacción tardía → oportunidad para estrategias *event-driven*
+* Validación empírica del fenómeno tipo **post-announcement drift**
+
+---
+
+⚡ **¿Por qué importa?**
+
+Porque incluso en señales “claras” como las recompras,
+la velocidad de ajuste del mercado no es homogénea.
+
+Y donde hay retrasos… hay estrategia.
+
+---
+
+📌 Pregunta abierta:
+¿Han detectado *alpha* consistente operando eventos de recompra en ciertos mercados?
+
+#QuantFinance #DataScience #StockMarket #Trading #SQL #Investing #Alpha #Analytics
